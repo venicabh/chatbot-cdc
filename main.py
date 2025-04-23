@@ -1,3 +1,7 @@
+@app.get("/")
+def home():
+    return {"message": "Chatbot do CDC está online!"}
+    
 from fastapi import FastAPI, Request
 import requests
 import os

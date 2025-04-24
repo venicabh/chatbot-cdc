@@ -42,3 +42,8 @@ async def webhook(request: Request):
 @app.get("/health")
 def health_check():
     return {"status": "active"}
+
+# Adicione este endpoint ao seu main.py
+@app.get('/keepalive')
+def keepalive():
+    return {"status": "keeping alive"}
